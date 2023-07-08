@@ -30,14 +30,14 @@ Node* make_node(int item){
 }
 
 //function to perform preorder traversal (NLR)
-void preorder(Node* proot){
-    if(proot != NULL)//node root not null
-    {
-        cout<<proot->info<<"";
-        preorder(proot->left);
-        preorder(proot->right);
-    }
-}
+// void preorder(Node* proot){
+//     if(proot != NULL)//node root not null
+//     {
+//         cout<<proot->info<<"";
+//         preorder(proot->left);
+//         preorder(proot->right);
+//     }
+// }
 
 //function to perform inorder traversal (LNR)
 void inorder(Node* proot){//proot==node root
@@ -50,13 +50,13 @@ void inorder(Node* proot){//proot==node root
 }
 
 //function to perform postorder traversal (LRN)
-void postorder(Node* proot){
-    if(proot != NULL){
-        postorder(proot->left);
-        postorder(proot->right);
-        cout<<proot->info<<"";
-    }
-}
+// void postorder(Node* proot){
+//     if(proot != NULL){
+//         postorder(proot->left);
+//         postorder(proot->right);
+//         cout<<proot->info<<"";
+//     }
+// }
 
 // function to find minimum value(item)node in the subtree rooted at "curr"
 Node* min_item(Node* curr){
@@ -229,13 +229,13 @@ int main(){
     inorder(proot);
     cout<<endl;
 
-    cout<<std::left<<setw(5)<<""<<"NLR"<<endl;
-    preorder(proot);
-    cout<<endl;
+    // cout<<std::left<<setw(5)<<""<<"NLR"<<endl;
+    // preorder(proot);
+    // cout<<endl;
    
-    cout<<std::left<<setw(5)<<""<<"LRN"<<endl;
-    postorder(proot);
-    cout<<endl;
+    // cout<<std::left<<setw(5)<<""<<"LRN"<<endl;
+    // postorder(proot);
+    // cout<<endl;
 
     cout<<endl<<line<<endl<<endl;
     do
@@ -253,15 +253,15 @@ int main(){
         inorder(proot);//LNR
         cout<<endl;
 
-        cout<<left<<setw(5)<<"";
-        cout<<"NLR"<<endl;
-        preorder(proot);//NLR
-        cout<<endl;
+        // cout<<left<<setw(5)<<"";
+        // cout<<"NLR"<<endl;
+        // preorder(proot);//NLR
+        // cout<<endl;
 
-        cout<<left<<setw(5)<<"";
-        cout<<"LRN"<<endl;
-        postorder(proot);//LRN
-        cout<<endl<<line<<endl;
+        // cout<<left<<setw(5)<<"";
+        // cout<<"LRN"<<endl;
+        // postorder(proot);//LRN
+        // cout<<endl<<line<<endl;
         
         cout<<left<<setw(5)<<""<<"Press ESC for exit other continue:"<<endl;
         ch=getch();
