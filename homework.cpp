@@ -1,3 +1,12 @@
+/*
+    Data Structure Algorithm
+
+    -Project for our 2nd Semester
+    -Delete Binary Search Trees
+    -Writ Code Name Doeurk Panha
+    -day 7/8/2023
+*/
+
 #include<iostream>
 #include<iomanip>
 #include<conio.h>
